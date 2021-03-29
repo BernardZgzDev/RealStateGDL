@@ -1,0 +1,246 @@
+:root {
+    --primario: #71b100;
+    --primario-hover: #639c00;
+    --secundario: #e08709;
+    --secundario-hover: #ca7908;
+}
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+h1,h2,h3,h4,h5 {
+    font-weight: 300;
+}
+
+/* NAVBAR */
+.header .bg-success {
+    background-color: var(--primario)!important;
+}
+
+@media (min-width: 768px) {
+    .header .barra {
+        background-color: transparent!important;
+    }
+    .header {
+        position: relative;
+    }
+
+    .header .barra {
+        position: absolute;
+        z-index: 100;
+        width: 100%;
+    }
+}
+
+.navbar-brand {
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+.navbar-brand span {
+    font-weight: 900;
+}
+
+.navbar-nav .nav-item {
+    font-size: 0.8rem;    
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.dropdown-menu {
+    background-color: var(--primario);
+}
+
+.dropdown-menu .dropdown-item {
+    color: #ffffff!important;
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: var(--secundario);
+}
+
+/* CAROUSEL */
+.bloque-info p {
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+.bloque-info .btn-warning {
+    background-color: var(--secundario);
+    border-color: var(--secundario);
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.carousel-caption h3 {
+    font-size: 2.0rem;
+}
+
+.bloque-border {
+    border-radius: 2px;
+}
+
+/* SECCIÓN SOBRE NOSOTROS */ 
+.sobre-nosotros h3 {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+.sobre-nosotros p {
+    font-size: 0.9rem;
+    line-height: 1.25rem;
+    width: 75%;
+}
+
+.titulo {
+    font-weight: 400;        
+}
+
+/* SECCION ANUNCIOS */
+.card-title {
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.card-text {
+    line-height: 1.25rem;     
+}
+
+.anuncios .card {
+    margin-bottom: 1.2rem;
+}
+
+.card-precio {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--primario);
+}
+
+.card-descripcion img {
+    margin-right: 0.4rem;
+}
+
+.anuncios .btn-warning, .encuentra .btn-warning {
+    color: #ffffff!important;
+    background-color: var(--secundario);
+    border-color: var(--secundario);
+    border-radius: 5px;
+}
+
+.anuncios .btn-warning:hover, .encuentra .btn-warning:hover {
+    background-color: var(--secundario-hover)!important;
+    border-color: var(--secundario-hover)!important;
+}
+
+/* SECCIÓN CONTACTO */
+.encuentra {
+    background-image: url(../img/contacto.jpg);
+    background-size: cover;    
+    background-repeat: no-repeat;
+}
+
+.encuentra .row {
+    height: 25rem;
+}
+
+.encuentra .titulo {
+    font-weight: 700;
+    font-size: 2.4rem;
+    color: #ffffff;
+}
+
+.encuentra p {
+    color: #ffffff;
+}
+
+/* BLOG Y TESTIMONIOS */
+.titulo-blog {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.titulo-blog::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.2rem;
+    background-color: var(--primario);
+    margin-top: 0.25rem;
+}
+
+.p-blog {
+    line-height: 1.25rem;
+    font-size: 0.9rem;
+    margin-top: -0.7rem;
+}
+
+.meta {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.meta span {
+    color: var(--secundario);
+}
+
+.blog-testimonios a.btn-success {
+    background-color: var(--primario)!important;
+    border-color: var(--primario);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.blog-testimonios .btn-success:hover, .blog-testimonios .btn-success:focus {
+    background-color: var(--primario-hover) !important;        
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.testimonios {
+    background-color: var(--primario);
+    color: #ffffff;
+}
+
+.testimonios .carousel-item {
+    padding-left: 1.5rem;    
+}
+
+.testimonios-texto {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+.testimonios-texto::before {
+    position: absolute;  
+    left: 0;  
+    top: 0.4rem;
+    content: open-quote;
+    font-size: 2.4rem;
+    font-weight: 900;
+}
+
+.testimonios span {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+/* FOOTER */
+.footer.bg-dark {
+    background-color: #333333 !important;
+}
+.footer .nav-link {
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.footer .nav-link:hover {
+    color: #dddddd;
+}
